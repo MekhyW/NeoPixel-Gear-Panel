@@ -93,42 +93,33 @@ void loop() {
       Spectogram(white);
       break;
     case 1:
-      Spectogram(white);
-      break;
-    case 2:
-      Spectogram(white);
-      break;
-    case 3:
-      Spectogram(white);
-      break;
-    case 4:
       Spectogram(red);
       break;
-    case 5:
+    case 2:
       GearsStrip.clear();
       break;
-    case 6:
+    case 3:
       Spectogram(yellow);
       break;
-    case 7:
+    case 4:
       Spectogram(pink);
       break;
-    case 8:
+    case 5:
       Spectogram(light_blue);
       break;
-    case 9:
+    case 6:
       Spectogram(deep_blue);
       break;
-    case 10:
+    case 7:
       Spectogram(orange);
       break;
-    case 11:
+    case 8:
       Spectogram(green);
       break;
-    case 12:
+    case 9:
       theaterChase(red, 50);
       break;
-    case 13:
+    case 10:
       Rainbow(10);
       break;
   }
