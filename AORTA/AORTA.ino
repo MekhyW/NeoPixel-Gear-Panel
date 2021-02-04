@@ -19,7 +19,7 @@ byte inputarray[10];
 
 void Spectogram(uint32_t color){
   for(int i = 0; i < LED_COUNT; i++){
-    if(SpectogramLevel > PixelHeight[i]){
+    if(SpectogramLevel >= PixelHeight[i]){
       GearsStrip.setPixelColor(i, color);
     } else {
       GearsStrip.setPixelColor(i, 0, 0, 0);
@@ -87,7 +87,7 @@ void loop() {
       }
     }
   }
-  SpectogramLevel = map(Volume, 0, 255, 0, 33);
+  SpectogramLevel = map(Volume, 5, 50, 0, 33);
   switch(ExpressionState){
     case 0:
       Spectogram(white);
